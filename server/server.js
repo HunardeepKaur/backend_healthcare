@@ -96,6 +96,7 @@ app.get("/profile", async (req, res) => {
 // Register routes
 app.use("/api/register", require("./routes/userRoutes.js"));
 app.use("/api/doctorRegister", require("./routes/doctorsDetails.js"));
+app.use("/api/newsletter",require("./routes/newsletterRoutes"))
 
 // Start the server
 app.listen(port, () => {
